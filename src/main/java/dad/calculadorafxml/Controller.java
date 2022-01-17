@@ -5,6 +5,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ContextMenu;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
@@ -36,8 +38,27 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        view.getStylesheets().add("/css/clasica.css");
         model.operaTextProperty().bindBidirectional(operaText.textProperty());
+
+        //menú contextual
+        MenuItem clasicoItem = new MenuItem("Clásica");
+        clasicoItem.setOnAction(e->{
+            view.getStylesheets().clear();
+            view.getStylesheets().add("/css/clasica.css");
+            System.out.println("clasica");
+        });
+
+        MenuItem modernoItem = new MenuItem("Moderna");
+        modernoItem.setOnAction(e->{
+            view.getStylesheets().clear();
+            view.getStylesheets().add("/css/moderna.css");
+            System.out.println("moderna");
+        });
+        ContextMenu menu = new ContextMenu(clasicoItem, modernoItem);
+        view.setOnContextMenuRequested(e->{
+            menu.show(view, e.getScreenX(),e.getScreenY());
+        });
     }
 
     @FXML

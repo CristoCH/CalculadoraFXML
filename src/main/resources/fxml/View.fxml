@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<GridPane fx:id="view" alignment="BASELINE_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="320.0"
-          xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane fx:id="view" alignment="BASELINE_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
     <rowConstraints>
-        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="20.0" prefHeight="200.0" />
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" vgrow="ALWAYS" />
         <RowConstraints maxHeight="1.7976931348623157E308" minHeight="20.0" prefHeight="200.0" />
         <RowConstraints maxHeight="1.7976931348623157E308" minHeight="20.0" prefHeight="200.0" />
         <RowConstraints maxHeight="1.7976931348623157E308" minHeight="20.0" prefHeight="200.0" />
@@ -24,100 +24,103 @@
         <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
     </columnConstraints>
     <children>
-        <Button fx:id="sieteButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSieteButton" text="7" GridPane.rowIndex="1">
+        <Button fx:id="sieteButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSieteButton" styleClass="numeric" text="7" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets left="5.0" right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="cuatroButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCuatroButton" text="4" GridPane.rowIndex="2">
+        <Button fx:id="cuatroButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCuatroButton" styleClass="numeric" text="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets left="5.0" right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="unoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onUnoButton" text="1" GridPane.rowIndex="3">
+        <Button fx:id="unoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onUnoButton" styleClass="numeric" text="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets left="5.0" right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="ceroButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCeroButton" text="0" GridPane.columnSpan="2" GridPane.rowIndex="4">
+        <Button fx:id="ceroButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCeroButton" styleClass="numeric" text="0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="ochoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onOchoButton" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button fx:id="ochoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onOchoButton" styleClass="numeric" text="8" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="cincoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCincoButton" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <Button fx:id="cincoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCincoButton" styleClass="numeric" text="5" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="dosButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDosButton" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Button fx:id="dosButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDosButton" styleClass="numeric" text="2" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="nueveButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNueveButton" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <Button fx:id="nueveButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNueveButton" styleClass="numeric" text="9" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="seisButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSeisButton" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <Button fx:id="seisButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSeisButton" styleClass="numeric" text="6" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="tresButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onTresButton" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <Button fx:id="tresButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onTresButton" styleClass="numeric" text="3" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="comaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onComaButton" text="," GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <Button fx:id="comaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onComaButton" styleClass="numeric" text="," GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets bottom="5.0" right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="buttonCe" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCeButton" text="CE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+        <Button fx:id="buttonCe" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCeButton" styleClass="reinicio" text="CE" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="multButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMultButton" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2">
+        <Button fx:id="multButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMultButton" styleClass="operacion" text="*" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="restaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onRestaButton" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+        <Button fx:id="restaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onRestaButton" styleClass="operacion" text="-" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="sumaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSumaButton" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4">
+        <Button fx:id="sumaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSumaButton" styleClass="operacion" text="+" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets bottom="5.0" right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="buttonC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCButton" text="C" GridPane.columnIndex="4" GridPane.rowIndex="1">
+        <Button fx:id="buttonC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCButton" styleClass="reinicio" text="C" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="divButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDivButton" text="/" GridPane.columnIndex="4" GridPane.rowIndex="2">
+        <Button fx:id="divButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDivButton" styleClass="operacion" text="/" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <Button fx:id="igualButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onIgualButton" text="=" GridPane.columnIndex="4" GridPane.rowIndex="3" GridPane.rowSpan="2">
+        <Button fx:id="igualButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onIgualButton" styleClass="operacion" text="=" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets bottom="5.0" right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
         </Button>
-        <TextField fx:id="operaText" alignment="TOP_RIGHT" editable="false" promptText="0.0" GridPane.columnSpan="5">
+        <TextField fx:id="operaText" alignment="TOP_RIGHT" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="20.0" minWidth="20.0" promptText="0.0" GridPane.columnSpan="5" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
-                <Insets left="5.0" right="5.0" top="5.0" />
+                <Insets />
             </GridPane.margin>
+         <font>
+            <Font size="12" />
+         </font>
         </TextField>
     </children>
 </GridPane>
