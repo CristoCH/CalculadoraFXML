@@ -39,12 +39,20 @@
     -fx-text-fill: darkgrey;
     -fx-background-color: white;
  }
+ .numeric:pressed{
+    -fx-text-fill: lightgrey;
+    -fx-background-color: black;
+ }
 .reinicio{
     -fx-text-fill: black;
     -fx-background-color: lightgray;
 }
 .reinicio:hover{
     -fx-background-color: white;
+}
+.reinicio:pressed{
+    -fx-text-fill: lightgrey;
+    -fx-background-color: black;
 }
 .operacion{
     -fx-text-fill: white;
@@ -54,6 +62,10 @@
 .operacion:hover{
     -fx-text-fill: white;
     -fx-background-color: darkorange;
+}
+.operacion:pressed{
+    -fx-text-fill: orange;
+    -fx-background-color: white;
 }
 #igualButton{
     -fx-text-fill: white;
